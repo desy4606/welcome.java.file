@@ -1,0 +1,7 @@
+import static java.lang.Math
+
+public double getArea(){
+    return pow(radius, 2) * PI;
+}
+//best practice is to use "this.instance" whenever calling an instance of a class
+public String toString
