@@ -4,18 +4,24 @@ public class CircleTester {
 
         System.out.println(c1);
 
-        // 3rd constructor to construct a new instance of Circle with the given radius and color
-        public Circle (double r, String c) {
+        
+        public Circle (double r, String c) { // 3rd constructor to construct a new instance of Circle with the given radius and color
             Circle c2 = new Circle();
-
-            c1.radius = 0.5;
+            
             c2.r = 4;
-            c2.c = purple;
+            c2.c = "purple";
+
+            c1.radius = 0.5; //testing an error
+
+            Circle c3 = new Circle();
+
+            c3.r = 5.5;
+            
+            System.out.println(c3.toString());   // explicit call
         }
 
-        // Getter for instance variable color
-        public String getColor() {return color; }
+        public String getColor() { return "purple"; } // Getter for instance variable color
 
-        // System.out.println("The circle has radius of " + c1.getRadius() + " and area of " + c1.getArea());
+        System.out.println("The circle has radius of " + c1.getRadius() + " and area of " + c1.getArea());
     }
 }
