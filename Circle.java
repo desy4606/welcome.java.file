@@ -20,9 +20,31 @@ public class Circle {
         color = "red";
     }
 
+    public Circle(double radius, String color)
+    {
+        this.radius = radius;
+        this.color = color;
+    }
+
     /** return the radius */
     public double getRadius() {
         return radius;
+    }
+
+    public String getColor(){
+        return color;
+    }
+
+    /** changes the radius */
+    public void setRadius(double radius)
+    {
+        this.radius = radius;
+    }
+
+    /** changes the color*/
+    public void setColor(String color)
+    {
+        this.color = color;
     }
 
     /** return the area of the circle */
@@ -32,6 +54,6 @@ public class Circle {
 
     /** overridden the toString method */
     public String toString() {
-        return "The circle has radius of " + this.getRadius() + " and area of " + this.getArea();
+        return "Circle[radius=" + this.getRadius() + ",color=" + this.getColor() + "]";
     }
 }
