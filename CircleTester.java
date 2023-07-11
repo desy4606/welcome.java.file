@@ -13,9 +13,6 @@ public static void main(String[] args){
         System.out.println("\n calling toString() implicitly:");
         System.out.println(c1);   
 
-        System.out.println(c1.toString()); // explicitly calling toString();
-        System.out.println(c1); // implicitly calling toString();
-
-        System.out.println("The circle has radius of " + c1.getRadius() + " and$
+        System.out.println("The circle has radius of " + c1.getRadius() + " and color of " + c1.getColor());
 }
 }
