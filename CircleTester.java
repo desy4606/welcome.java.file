@@ -4,11 +4,13 @@ public class CircleTester {
         System.out.println("The color of the circle is " + c1.getColor() );
 
          
-        //test for error message when trying to access a private variable 
+        //test accessing a private variable
         //System.out.println(c1.radius);
 
-	System.out.println(c1.toString()); // explicitly calling toString();
-        System.out.println(c1); // implicitly calling toString();
+        System.out.println("calling toString() explicitly:");
+	System.out.println( c1.toString() );
+        System.out.println("\n calling toString() implicitly:");
+        System.out.println(c1);
 
-        System.out.println("The circle has radius of " + c1.getRadius() + " and area of " + c1.getArea());
+        System.out.println( "The circle has radius of " + c1.getRadius() + " and color of " + c1.getColor() );
 }
