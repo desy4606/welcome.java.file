@@ -1,3 +1,7 @@
+/**
+* Author: Jake Helpinstill Editor: Deslynn Vasquez
+*/
+
 public class CircleTester {
 
 public static void main(String[] args){
